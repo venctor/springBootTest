@@ -1,0 +1,14 @@
+# 配制项目路径
+server:
+  servlet:
+    context-path: /test
+#  devtools
+spring:
+  profiles:
+    active: ${profileActive}
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+  freemarker:
+    cache: false    #页面不加载缓存，修改即时生效
+
